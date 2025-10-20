@@ -2,8 +2,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
-import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
+const BackgroundFX = dynamic(() => import("./BackgroundFX"), { ssr: false });
+const ParallaxProvider = dynamic(
+  () => import("react-scroll-parallax").then(m => m.ParallaxProvider),
+  { ssr: false }
+);
 
 const SectionHeader = ({
   id,
@@ -219,8 +223,9 @@ import {
   FaGraduationCap,
 } from "react-icons/fa";
 import { RiLeafLine } from "react-icons/ri";
-import BackgroundFX from "./BackgroundFX";
 import NavBar from "./NavBar";
+import dynamic from "next/dynamic";
+import { Parallax } from "react-scroll-parallax";
 
 
 const ALL_PROJECT_TECHS = Array.from(
