@@ -4,7 +4,6 @@ import { ReactNode } from "react";
 import { motion } from "framer-motion";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
-
 const SectionHeader = ({
   id,
   title,
