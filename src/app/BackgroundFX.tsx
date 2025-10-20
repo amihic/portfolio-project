@@ -183,7 +183,7 @@ export default function BackgroundFX() {
   return (
     <div
       aria-hidden
-      className="pointer-events-none fixed inset-0 -z-10 overflow-hidden select-none"
+      className="pointer-events-none fixed inset-0 z-0 overflow-hidden select-none"
     >
       {/* Glow blobs */}
       <motion.div

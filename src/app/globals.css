@@ -1,9 +1,13 @@
 @import "tailwindcss";
 
+/* DARK je default */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a; /* bilo #ffffff */
+  --foreground: #ededed; /* bilo #171717 */
+  color-scheme: dark;     /* natjeraj browser UI da bude dark (forme, select, itd.) */
 }
+
+/* (nema više @media prefers-color-scheme) */
 
 @theme inline {
   --color-background: var(--background);
@@ -12,21 +16,15 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html, body {
+  /* Uvek tamna podloga, sprečava “white flash” i na iOS-u */
+  background-color: #0a0a0a !important;
+  color: var(--foreground);
+  scroll-behavior: auto; /* Lenis preuzima kontrolu */
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-}
-
-html, body {
-  scroll-behavior: auto; /* Lenis preuzima kontrolu */
 }
 
 ::selection {

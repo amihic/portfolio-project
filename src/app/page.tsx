@@ -464,7 +464,7 @@ export default function Home() {
   return (
     <ParallaxProvider>
       <NavBar />
-      <main className="relative overflow-hidden text-center">
+      <main className="relative z-10 overflow-hidden text-center">
         {/* Background bokeh circles with parallax */}
         <BackgroundFX />
         <Parallax speed={-10}>
