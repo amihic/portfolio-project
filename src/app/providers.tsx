@@ -19,7 +19,6 @@ export default function Providers({ children }: { children: React.ReactNode }) {
     requestAnimationFrame(raf);
 
     return () => {
-      // @ts-ignore
       lenis.destroy?.();
     };
   }, []);

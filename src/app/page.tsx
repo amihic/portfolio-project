@@ -484,7 +484,7 @@ export default function Home() {
               transition={{ duration: 0.8 }}
               className="text-5xl md:text-7xl font-bold tracking-tight"
             >
-              Hello, I'm <span className="text-indigo-400">Aleksa</span>.
+              Hello, I&apos;m <span className="text-indigo-400">Aleksa</span>.
             </motion.h1>
 
             <motion.p
@@ -630,7 +630,7 @@ export default function Home() {
           <SectionHeader
             id="contact-head"
             title="CONTACT"
-            subtitle="Let’s build something great."
+            subtitle="Let&apos;s build something great."
             accent="emerald"
             icon={<span>📬</span>}
           />
