@@ -1,8 +1,9 @@
 "use client";
 import React from "react";
-import { ReactNode } from "react";
 import { motion } from "framer-motion";
+import { ReactNode } from "react";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
+
 
 const SectionHeader = ({
   id,
