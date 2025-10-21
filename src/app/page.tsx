@@ -121,8 +121,9 @@ const PROFESSIONAL_EXPERIENCE = [
     period: "Oct 2024 – Present",
     location: "Remote",
     bullets: [
-      "Contributed to e-banking web application development (UI modernization + backend improvements).",
-      "Focused on reliability and performance; improved user experience.",
+      "Contributed to the development of an e-banking web application",
+      "Improving the UI for a more modern look",
+      "Enhancing backend functionality to ensure better performance and reliability",
     ],
     tech: ["Java", "JavaScript", "HTML", "CSS", "PostgreSQL", "Jira", "GitLab"],
   },
@@ -132,10 +133,12 @@ const PROFESSIONAL_EXPERIENCE = [
     period: "Sep 2023 – Aug 2024",
     location: "Remote",
     bullets: [
-      "Developing a real-estate web application (sales and rentals).",
-      "Maintaining and extending backend services; migrating from legacy systems.",
+      "Developed a real estate web application for sales and rentals",
+      "Responsible for building and maintaining backend services",
+      "Database migrations from the legacy system",
+      "Implemented Clean Architecture, CQRS pattern",
     ],
-    tech: ["C#/.NET", "EF", "PostgreSQL", "CI/CD", "Azure DevOps"],
+    tech: ["C#/.NET", "EF", "React", "PostgreSQL", "Identity", "Postman", "Jira", "GitLab"],
   },
 ];
 
@@ -145,53 +148,80 @@ const INTERNSHIPS = [
     company: "Valcon (ex Hybrid IT)",
     period: "May 2023",
     bullets: [
-      "Designed and implemented a library operations API.",
-      "Set up CI/CD pipelines on Azure; collaborated in a team environment.",
+      "Designed and implemented an API for library operations",
+      "Set up CI/CD pipelines for deployment on Azure",
+      "Gained practical experience in web development and team collaboration using the Scrum methodology",
     ],
-    tech: ["C#/.NET", "EF", "Identity", "PostgreSQL", "CI/CD", "Azure", "Scrum"],
+    tech: ["C#/.NET", "EF", "Identity", "PostgreSQL", "CI/CD", "Azure", "Postman", "Scrum"],
   },
   {
     role: ".NET Developer",
     company: "Vega IT",
     period: "Jan 2023",
     bullets: [
-      "Web application for internal records and time management.",
-      "Clean Architecture, TypeScript front-end, MS SQL database.",
+      "Developed a web application designed to serve as a time management internal tool for other developers within the company",
+      "Clean architecture, Entity Framework, Code-First approach",
     ],
-    tech: ["C#/.NET", "EF", "React", "TypeScript", "MS SQL", "GitHub"],
+    tech: ["C#/.NET", "EF", "React", "TypeScript", "MS SQL", "GitHub", "Postman"],
   },
 ];
 
-const PERSONAL_PROJECTS = [
+const PROJECTS = [
   {
     title: "E-commerce application",
-    description: "End-to-end e-commerce app (search, cart, checkout) focused on UI/UX.",
-    tech: ["C#/.NET", "Angular", "PostgreSQL", "Docker", "GitHub"],
+    description: [
+      "An online shopping experience",
+      "Browse, search and buy a variety of products",
+      "Managing shopping carts, orders, and user accounts",
+      "Building and consuming RESTful APIs with JWT authentication",
+      "Implementation of online payment systems - PayPal API integration",
+    ],
+    tech: ["C#/.NET", "Angular", "PostgreSQL", "Docker", "Postman"],
   },
   {
     title: "Blood transfusion center",
-    description: "Centralized information system for a blood transfusion center with appointment scheduling.",
-    tech: ["Java", "Spring Boot", "Angular", "MongoDB", "GitHub"],
+    description: [
+      "Centralized information system of the blood transfusion center",
+      "Creating a booking/reservation system",
+      "Implementing user JWT authentication and validation",
+      "Setting up QR code and email notifications for booking confirmations",
+    ],
+    tech: ["Spring Boot", "Angular", "MongoDB", "Postman"],
   },
   {
     title: "Dislinkt",
-    description: "LinkedIn-like web app: profiles, connections, posts; backend logic, user management, and relationships.",
-    tech: ["C#/.NET", "Entity Framework", "React", "PostgreSQL", "GitHub"],
+    description: [
+      "A web application similar to LinkedIn",
+      "User management – registration, JWT authentication, profile handling",
+      "Backend logic and data relationship modeling using Entity Framework and PostgreSQL",
+    ],
+    tech: ["C#/.NET", "Entity Framework", "React", "PostgreSQL", "Postman"],
   },
   {
-    title: "Private hospital (WPF)",
-    description: "Desktop application for private hospital staff; simulation of real client requirements.",
-    tech: ["WPF", "C#", "NoSQL", "GitHub"],
-  },
-  {
-    title: "Cinema",
-    description: "Online movie ticket reservation system.",
-    tech: ["Java", "Spring Boot", "H2", "HTML", "CSS", "JavaScript", "GitHub"],
+    title: "Private hospital",
+    description: [
+      "An application that would be used by staff of a private hospital",
+      "A simulation of a real relationship with clients and their requirements",
+    ],
+    tech: ["WPF", "C#", "NoSQL", "Postman"],
   },
   {
     title: "Supplement store",
-    description: "Online store for health and training supplements.",
-    tech: ["C#/.NET", "EF", "React", "PostgreSQL", "GitHub"],
+    description: [
+      "A web application for online sales of supplements",
+      "Managing shopping carts and orders",
+      "Building product catalogs and inventory management",
+      "Setting up email notifications for booking confirmations",
+    ],
+    tech: ["C#/.NET", "Entity Framework", "React", "PostgreSQL", "Postman"],
+  },
+  {
+    title: "Cinema",
+    description: [
+      "A system for online reservation of cinema tickets",
+      "Setting up email notifications for booking confirmations",
+    ],
+    tech: ["Spring Boot", "H2", "HTML", "CSS", "JavaScript", "Postman"],
   },
 ];
 
@@ -226,18 +256,20 @@ import { RiLeafLine } from "react-icons/ri";
 import NavBar from "./NavBar";
 import dynamic from "next/dynamic";
 import { Parallax } from "react-scroll-parallax";
+import { SiJira, SiPostman } from "react-icons/si";
 
 
 const ALL_PROJECT_TECHS = Array.from(
   new Set([
-    ...PERSONAL_PROJECTS.flatMap((p) => p.tech),
+    ...PROJECTS.flatMap((p) => p.tech),
     ...PROFESSIONAL_EXPERIENCE.flatMap((e) => e.tech),
     ...INTERNSHIPS.flatMap((i) => i.tech),
   ])
 );
 
+
+
 const TECH_ICONS: Record<string, React.ReactNode> = {
-  // Core stacks
   "C#/.NET": <FaCode className="text-indigo-400 text-xl" />,
   ".NET": <FaCode className="text-indigo-400 text-xl" />,
   "C#": <FaCode className="text-indigo-400 text-xl" />,
@@ -271,7 +303,11 @@ const TECH_ICONS: Record<string, React.ReactNode> = {
   GitLab: <FaGitlab className="text-orange-400 text-xl" />,
 
   NoSQL: <FaDatabase className="text-neutral-400 text-xl" />,
+
+  Jira: <SiJira className="text-blue-500 text-xl" />,
+  Postman: <SiPostman className="text-orange-400 text-xl" />,
 };
+
 
 const LANGUAGES = [
   { name: "Serbian", level: "Native" },
@@ -442,20 +478,36 @@ function InternshipItem({ item }: { item: (typeof INTERNSHIPS)[number] }) {
   );
 }
 
-function ProjectCard({ p }: { p: { title: string; description: string; tech: string[] } }) {
+type Project = {
+  title: string;
+  description: string | string[];
+  tech: string[];
+};
+
+function ProjectCard({ p }: { p: Project }) {
+  const bullets = Array.isArray(p.description) ? p.description : [p.description];
+
   return (
     <motion.article
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.6 }}
-      className="group rounded-2xl border border-neutral-800 p-6 hover:border-neutral-600 transition bg-neutral-950/50 text-center"
+      className="group rounded-2xl border border-neutral-800 p-6 hover:border-neutral-600 transition bg-neutral-950/50"
     >
-      <h3 className="text-xl font-medium transition-colors group-hover:text-amber-400">
+      <h3 className="text-xl font-medium transition-colors group-hover:text-amber-400 text-left">
         {p.title}
       </h3>
-      <p className="text-neutral-400 mt-2">{p.description}</p>
-      <TechRow stack={p.tech} />
+
+      <ul className="list-disc ml-6 mt-3 text-neutral-300 space-y-1.5 text-left">
+        {bullets.map((item, i) => (
+          <li key={i}>{item}</li>
+        ))}
+      </ul>
+
+      <div className="mt-3">
+        <TechRow stack={p.tech} />
+      </div>
     </motion.article>
   );
 }
@@ -580,7 +632,7 @@ export default function Home() {
             icon={<span>✨</span>}
           />
           <div className="mt-8 grid md:grid-cols-2 xl:grid-cols-3 gap-6 place-items-center">
-            {PERSONAL_PROJECTS.map((p) => (
+            {PROJECTS.map((p) => (
               <ProjectCard key={p.title} p={p} />
             ))}
           </div>
