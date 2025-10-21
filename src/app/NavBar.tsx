@@ -8,7 +8,7 @@ type SectionLink = { id: string; label: string };
 const LINKS: SectionLink[] = [
   { id: "experience",  label: "PROFESSIONAL EXPERIENCE" },
   { id: "internships", label: "INTERNSHIPS" },
-  { id: "projects",    label: "PERSONAL PROJECTS" },
+  { id: "projects",    label: "PROJECTS" },
   { id: "tech-stack",  label: "TECH STACK" },
   { id: "education",   label: "EDUCATION & LANGUAGES" },
   { id: "contact",     label: "CONTACT" },

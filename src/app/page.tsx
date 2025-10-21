@@ -575,7 +575,7 @@ export default function Home() {
         <section className="px-6 py-24 scroll-mt-24 md:scroll-mt-28" id="projects">
           <SectionHeader
             id="personal-projects"
-            title="PERSONAL PROJECTS"
+            title="PROJECTS"
             accent="amber"
             icon={<span>✨</span>}
           />
