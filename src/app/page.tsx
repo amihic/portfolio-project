@@ -117,7 +117,7 @@ const Card = ({ children, className = "" }: { children: React.ReactNode; classNa
 const PROFESSIONAL_EXPERIENCE = [
   {
     role: "Full-Stack Software Developer",
-    company: "Zagrebačka banka (UniCredit Group)",
+    company: "Zagrebačka banka UniCredit Group",
     period: "Oct 2024 – Present",
     location: "Remote",
     bullets: [
@@ -648,7 +648,7 @@ export default function Home() {
           <SectionHeader
             id="tech-stack-head"
             title="TECH STACK"
-            subtitle="Technologies I frequently use across my personal projects."
+            subtitle="Technologies I frequently use across projects."
             accent="emerald"
             icon={<span>🧰</span>}
           />
@@ -722,6 +722,11 @@ export default function Home() {
             </a>
           </div>
         </section>
+
+        {/* Separator */}
+        <Parallax speed={8}>
+          <div className="h-48" />
+        </Parallax>
 
       </main>
     </ParallaxProvider>
