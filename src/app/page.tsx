@@ -598,10 +598,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Separator */}
-        <Parallax speed={8}>
-          <div className="h-24 bg-gradient-to-r from-indigo-600/20 to-cyan-400/20" />
-        </Parallax>
+        
 
         {/* INTERNSHIPS */}
         <section className="px-6 py-24 scroll-mt-24 md:scroll-mt-28" id="internships">
@@ -618,10 +615,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Separator */}
-        <Parallax speed={8}>
-          <div className="h-24 bg-gradient-to-r from-indigo-600/20 to-cyan-400/20" />
-        </Parallax>
+        
 
         {/* PERSONAL PROJECTS */}
         <section className="px-6 py-24 scroll-mt-24 md:scroll-mt-28" id="projects">
@@ -638,10 +632,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Separator */}
-        <Parallax speed={8}>
-          <div className="h-24 bg-gradient-to-r from-indigo-600/20 to-cyan-400/20" />
-        </Parallax>
+        
 
         {/* TECH STACK */}
         <section className="px-6 py-24" id="tech-stack">
@@ -655,10 +646,7 @@ export default function Home() {
           <TechStackGrid techs={ALL_PROJECT_TECHS} />
         </section>
 
-        {/* Separator */}
-        <Parallax speed={8}>
-          <div className="h-24 bg-gradient-to-r from-indigo-600/20 to-cyan-400/20" />
-        </Parallax>
+        
 
         {/* EDUCATION */}
         <section className="px-6 py-24 scroll-mt-24 md:scroll-mt-28" id="education">
@@ -677,10 +665,7 @@ export default function Home() {
           <LanguagesList items={LANGUAGES} />
         </section>
 
-        {/* Separator */}
-        <Parallax speed={8}>
-          <div className="h-24 bg-gradient-to-r from-indigo-600/20 to-cyan-400/20" />
-        </Parallax>
+        
 
         {/* Contact */}
         <section id="contact" className="min-h-[50vh] px-6 py-24 text-center">

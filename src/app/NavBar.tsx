@@ -84,7 +84,7 @@ export default function NavBar() {
             className="relative flex items-center gap-2 rounded-xl px-3 py-2 text-sm font-medium text-white"
           >
             <span className="bg-gradient-to-r from-indigo-400 to-indigo-400 bg-clip-text text-transparent font-semibold">
-              ALEKSA
+              HOME
             </span>
           </button>
 
