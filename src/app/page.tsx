@@ -148,9 +148,10 @@ const INTERNSHIPS = [
     company: "Valcon (ex Hybrid IT)",
     period: "May 2023",
     bullets: [
+      "Team collaboration using the Scrum methodology",
       "Designed and implemented an API for library operations",
       "Set up CI/CD pipelines for deployment on Azure",
-      "Gained practical experience in web development and team collaboration using the Scrum methodology",
+      "Artifact build, Docker image and .NET API containerization",
     ],
     tech: ["C#/.NET", "EF", "Identity", "PostgreSQL", "CI/CD", "Azure", "Postman", "Scrum"],
   },
