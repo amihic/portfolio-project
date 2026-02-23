@@ -118,7 +118,7 @@ const PROFESSIONAL_EXPERIENCE = [
   {
     role: "Full-Stack Software Developer",
     company: "Zagrebačka banka UniCredit Group",
-    period: "Oct 2024 – Present",
+    period: "Apr 2025 – Present",
     location: "Remote",
     bullets: [
       "Contributed to the development of an e-banking web application",
@@ -130,7 +130,7 @@ const PROFESSIONAL_EXPERIENCE = [
   {
     role: ".NET Developer",
     company: "Palace Agency",
-    period: "Sep 2023 – Aug 2024",
+    period: "Mar 2024 – Mar 2025",
     location: "Remote",
     bullets: [
       "Developed a real estate web application for sales and rentals",
