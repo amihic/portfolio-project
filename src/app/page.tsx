@@ -116,27 +116,33 @@ const Card = ({ children, className = "" }: { children: React.ReactNode; classNa
 
 const PROFESSIONAL_EXPERIENCE = [
   {
-    role: "Full-Stack Software Developer",
+    role: "Full Stack Software Developer",
     company: "Zagrebačka banka UniCredit Group",
-    period: "Apr 2025 – Present",
+    period: "June 2025 – Present",
     location: "Remote",
     bullets: [
-      "Contributed to the development of an e-banking web application",
-      "Improving the UI for a more modern look",
+      "Refactored legacy codebase improving performance, scalability, and maintainability",
+      "Implemented retry mechanisms with state preservation for failed transaction confirmations reducing redundant processing ",
       "Enhancing backend functionality to ensure better performance and reliability",
+      "Extended application functionality by developing new features",
+      "Debugged and resolved bugs across services ensuring data consistency",
+      "Modernized UI components to improve responsiveness and overall user engagement",
+      "Applied error handling to ensure reliable system behavior",
     ],
-    tech: ["Java", "JavaScript", "HTML", "CSS", "PostgreSQL", "Jira", "GitLab"],
+    tech: ["C#/.NET", "JavaScript", "HTML", "CSS", "PostgreSQL", "Jira", "GitLab"],
   },
   {
     role: ".NET Developer",
     company: "Palace Agency",
-    period: "Mar 2024 – Mar 2025",
+    period: "May 2024 – May 2025",
     location: "Remote",
     bullets: [
-      "Developed a real estate web application for sales and rentals",
-      "Responsible for building and maintaining backend services",
-      "Database migrations from the legacy system",
-      "Implemented Clean Architecture, CQRS pattern",
+      "Developed a full-stack real estate web application for property sales and rentals, participating from initial concept to production",
+      "Designed and implemented system architecture based on Clean Architecture and CQRS pattern, ensuring separation of concerns and scalability",
+      "Collaborated with clients to define application requirements, features, and user workflows",
+      "Database migration from a legacy system to a new structured schema, handling specific property data models",
+      "Integrated external services including email notifications, PDF generation, Google Maps API for property visualization",
+      "Implemented automated XML-based integrations with platforms Njuskalo and Nekretnine for real-time property synchronization",
     ],
     tech: ["C#/.NET", "EF", "React", "PostgreSQL", "Identity", "Postman", "Jira", "GitLab"],
   },
@@ -144,7 +150,7 @@ const PROFESSIONAL_EXPERIENCE = [
 
 const INTERNSHIPS = [
   {
-    role: "Full-Stack Software Developer",
+    role: "Full Stack Software Developer",
     company: "Valcon (ex Hybrid IT)",
     period: "May 2023",
     bullets: [
