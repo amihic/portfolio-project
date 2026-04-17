@@ -121,7 +121,7 @@ const PROFESSIONAL_EXPERIENCE = [
     period: "June 2025 – Present",
     location: "Remote",
     bullets: [
-      "Refactored legacy codebase improving performance, scalability, and maintainability",
+      "Refactored legacy codebase improving performance, scalability and maintainability",
       "Implemented retry mechanisms with state preservation for failed transaction confirmations reducing redundant processing ",
       "Enhancing backend functionality to ensure better performance and reliability",
       "Extended application functionality by developing new features",
